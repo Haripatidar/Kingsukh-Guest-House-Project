@@ -1,0 +1,133 @@
+.about-section {
+  background: rgb(255, 255, 255);
+  padding: 4rem 4rem;
+  min-height: 60vh;
+}
+
+.about-section .about-row {
+  display: flex;
+  align-items: center;
+  margin: 0 10%;
+  flex-wrap: wrap;
+}
+
+.about-section .about-image {
+  flex: 1 1 40%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about-section .about-image img {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.about-section .about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-section .about-content {
+  flex: 1 1 50%;
+  padding: 2rem;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.about-section .about-content h2 {
+  text-align: left;
+}
+
+.about-section .about-content h3 {
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.about-section .about-content p {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+  font-family: "Nunito", sans-serif;
+  color: #555;
+}
+
+.about-section .about-box-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.about-section .about-box1 {
+  text-align: left;
+}
+
+.about-section .about-box1 p {
+  text-transform: none;
+  color: #011aff;
+}
+
+.about-section .about-box1 p a {
+  color: #011aff;
+  cursor: pointer;
+}
+
+.about-section .about-resumebtn {
+  margin-top: 3rem;
+}
+
+.about-section .about-btn {
+  padding: 1.7rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.3s;
+  color: #fff;
+  background: #CE3271;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  font-family: "Nunito", sans-serif;
+}
+
+.about-section .about-btn span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.about-section .about-btn:hover {
+  background: #b02b61;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-section .about-row {
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+
+  .about-section .about-image,
+  .about-section .about-content {
+    flex: 1 1 100%;
+    margin: 2rem 0;
+    max-width: 100%;
+    display: block;
+    padding: 1rem;
+  }
+
+  .about-section .about-content h3 {
+    font-size: 2rem;
+  }
+
+  .about-section .about-content p {
+    font-size: 1rem;
+  }
+
+  .about-section .about-btn span {
+    font-size: 1.5rem;
+  }
+}
